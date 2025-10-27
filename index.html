@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vBoard Whiteboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="whiteboard" class="whiteboard">
+      <div id="plugin-area" class="plugin-area" aria-live="polite"></div>
+
+      <nav
+        id="plugin-menu"
+        class="plugin-menu hidden"
+        aria-label="Plugin launcher taskbar"
+      >
+        <div class="menu-inner">
+          <div class="menu-items" role="list"></div>
+        </div>
+      </nav>
+    </div>
+
+    <template id="plugin-window-template">
+      <section class="plugin-window" data-plugin="">
+        <header class="plugin-header">
+          <button
+            class="plugin-btn plugin-settings"
+            type="button"
+            title="Settings"
+            aria-label="Plugin settings"
+          >
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <h2 class="plugin-title"></h2>
+          <button
+            class="plugin-btn plugin-close"
+            type="button"
+            title="Close"
+            aria-label="Close plugin"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </header>
+        <div class="plugin-body"></div>
+      </section>
+    </template>
+
+    <script type="module" src="menu.js"></script>
+  </body>
+</html>

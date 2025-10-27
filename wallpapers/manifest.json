@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wallpaper-aurora-gradient",
+    "name": "Aurora Gradient",
+    "src": "wallpapers/560817.jpg",
+    "preview": "wallpapers/560817.jpg",
+    "alt": "Vibrant purple and teal gradient wallpaper",
+    "size": "cover",
+    "position": "center center",
+    "repeat": "no-repeat"
+  }
+]
